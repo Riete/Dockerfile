@@ -10,7 +10,7 @@ RUN rm -f /bin/sh && \
 RUN apt-get update && \
     apt-get install -y libmysqlclient-dev python-dev python-pip build-essential openssl libssl-dev \
                        libpcre3 libpcre3-dev zlib1g-dev gettext nfs-common unzip nginx \
-                       libxml2-dev libxslt1-dev libffi-dev
+                       libxml2-dev libxslt1-dev libffi-dev mysql-client
 RUN sudo pip install  --upgrade pip && \
     sudo pip install Django==1.10.6 django-widget-tweaks MySQL-python xmltodict pytz libipa apk_parse_ph4 biplist \
                 Flask Flask-Login Flask-SQLAlchemy Flask-RESTful Flask-HTTPAuth Flask-WTF \
