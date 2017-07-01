@@ -18,7 +18,8 @@ RUN sudo pip install  --upgrade pip && \
                 flask-socketio flask_cors passlib enum34 gevent scrypt \
                 gevent requests \
                 tornado paramiko futures xmltodict lettuce python-Levenshtein Appium-Python-Client Pillow \
-                supervisor uwsgi
+                supervisor uwsgi \
+                django-filter==1.0.2 djangorestframework==3.6.2 Pillow==4.1.1 pycrypto
 
 RUN apt-get clean
 EXPOSE 80
