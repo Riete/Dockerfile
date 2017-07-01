@@ -3,8 +3,8 @@ MAINTAINER riet
 RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak
 ADD sources.list /etc/apt/sources.list
 RUN cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
-RUN mkdir /root/.pip
-ADD pip.conf /root/.pip/pip.conf
+#RUN mkdir /root/.pip
+#ADD pip.conf /root/.pip/pip.conf
 RUN rm -f /bin/sh && \
     ln -s /bin/bash /bin/sh
 RUN apt-get update && \
