@@ -16,7 +16,7 @@ RUN pip install  --upgrade pip && \
                 Flask Flask-Login Flask-SQLAlchemy Flask-RESTful Flask-HTTPAuth Flask-WTF \
                 Flask-Script Flask-Admin Flask-Moment Flask-Migrate \
                 flask-socketio flask_cors passlib enum34 gevent scrypt \
-                requests tornado paramiko futures xmltodict lettuce python-Levenshtein Appium-Python-Client Pillow \
+                requests tornado paramiko futures lettuce python-Levenshtein Appium-Python-Client Pillow \
                 supervisor uwsgi \
                 django-filter==1.0.2 djangorestframework==3.6.2 pycrypto
 RUN pip uninstall -y selenium && pip install selenium=2.53
