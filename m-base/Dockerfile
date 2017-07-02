@@ -19,7 +19,7 @@ RUN sudo pip install  --upgrade pip && \
                 requests tornado paramiko futures lettuce python-Levenshtein Appium-Python-Client Pillow \
                 supervisor uwsgi \
                 django-filter==1.0.2 djangorestframework==3.6.2 pycrypto
-RUN sudo pip uninstall -y selenium && pip install selenium=2.53
+RUN sudo pip uninstall -y selenium && pip install selenium==2.53
 RUN sudo pip install --upgrade six
 RUN apt-get clean
 EXPOSE 80
