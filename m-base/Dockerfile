@@ -11,16 +11,16 @@ RUN apt-get update && \
     apt-get install -y libmysqlclient-dev python-dev python-pip build-essential openssl libssl-dev \
                        libpcre3 libpcre3-dev zlib1g-dev gettext nfs-common unzip nginx \
                        libxml2-dev libxslt1-dev libffi-dev mysql-client
-RUN pip install  --upgrade pip && \
-    pip install Django==1.10.6 django-widget-tweaks MySQL-python xmltodict pytz libipa apk_parse_ph4 biplist \
+RUN sudo pip install  --upgrade pip && \
+    sudo pip install Django==1.10.6 django-widget-tweaks MySQL-python xmltodict pytz libipa apk_parse_ph4 biplist \
                 Flask Flask-Login Flask-SQLAlchemy Flask-RESTful Flask-HTTPAuth Flask-WTF \
                 Flask-Script Flask-Admin Flask-Moment Flask-Migrate \
                 flask-socketio flask_cors passlib enum34 gevent scrypt \
                 requests tornado paramiko futures lettuce python-Levenshtein Appium-Python-Client Pillow \
                 supervisor uwsgi \
                 django-filter==1.0.2 djangorestframework==3.6.2 pycrypto
-RUN pip uninstall -y selenium && pip install selenium=2.53
-RUN pip install --upgrade six
+RUN sudo pip uninstall -y selenium && pip install selenium=2.53
+RUN sudo pip install --upgrade six
 RUN apt-get clean
 EXPOSE 80
 EXPOSE 5000
